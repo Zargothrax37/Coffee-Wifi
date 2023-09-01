@@ -1,0 +1,41 @@
+#homepage {
+    padding-top: 10%;
+    padding-bottom: 15%;
+    align-items: center;
+}
+
+#add {
+    padding-top: 5%;
+    padding-bottom: 15%;
+    align-items: left;
+}
+
+#homepage p {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.px-10 {
+    color: white;
+}
+
+hr {
+    border-top: 3px solid;
+}
+
+img {
+    width: 70px;
+}
+
+#coffee_list {
+    padding-bottom: 31%;
+}
+
+#coffee_list th{
+    padding-right: 125px
+}
+
+tr {
+    border-bottom: 2px solid #6c757d;
+}
+

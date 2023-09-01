@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee & Wifi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+</head>
+<body>
+  <body class="d-flex h-100 text-center text-bg-dark">
+
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link fw-bold py-1 px-10 active" aria-current="page" href="{{ url_for('home') }}">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-3" id="add">
+    <form method="POST" action="/add">
+      <p>Name cafe: </p><div> {{form.cafe_name}}</div>
+      <p>Cafe location (Google maps URL): </p><div> {{form.cafe_location}}</div>
+      <p>Cafe opening time (AM): </p><div> {{form.cafe_open}}</div>
+      <p>Cafe closing time (PM): </p><div> {{form.cafe_closed}}</div>
+      <p>Coffee rating: </p><div> {{form.cafe_coffee}}</div>
+      <p>Wifi rating: </p><div> {{form.cafe_wifi}}</div>
+      <p>Energy rating: </p><div> {{form.cafe_energy}}</div>
+      <div> {{form.submit}}</div>
+</form>
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+  </footer>
+</div>
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
